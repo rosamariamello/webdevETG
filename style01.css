@@ -1,0 +1,25 @@
+*
+    #primeira {
+background-color: blueviolet;
+width: 200px;
+padding: 2%;
+    }
+
+#segunda {
+    background-color: aqua;
+    width: 400px;
+    padding: 1%
+}
+#terceira {
+    background-color: #5d6cca;
+    width: 600px;
+    padding: 10%
+}
+
+    .negrito {
+        font-weight: bold;
+       }
+       
+    .ul.square {
+         list-style-type: square; }
+       
