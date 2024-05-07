@@ -7,41 +7,79 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Formulário</title>
+        <title>Formulários em HTML</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/style02.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <main>
-            
-        <section>
-            <article></article>
-            <h1> <p></p>
-            </h1>
-        </section>
-        <section>
-            <h2>
-                <form action="">
-                    <div id=""></div>
-                    <div id=""></div>
-                    <div id=""></div>
-                    <div id=""></div>
-
+        <header>
+            <h1>Estudando formulários em HTML</h1>
+            <div class="navegacao">
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+             </div>
+        </header>
+    <main>
+            <div id="conteudo">
+                 <article>
+                 <h2 class="titulo"> Sobre </h2 class="titulo">
+                    <p>
+                    Esta é uma página de exemplo, criada para demonstrar o uso da tag form do HTML
+                    </p>
+                </article>
+                <img src="https://www.ispsaude.com.br/ponta-diamantada-3099-fg-poul-sorensen-p-ME01650A" alt="imagem não encontrada"/> 
+            </div>
+        <section id="sec01">
+            <h2 class="titulo"> Serviços</h2 class="titulo">
+                <ul>
+                <li>Sobre</li>
+                <li>Serviços</li>
+                <li>Contato</li>
+                </ul>
+         </section>
+        <section id="sec02">
+            <h2 class="titulo">Entre em contato conosco </h2 class="titulo">
+                <form action="contato" method="post">
+                    <div>
+                    <label>Nome</label>
+                    <br>
+                    <input type="text" name="Nome" required> 
+                </div>
+                    <br>
+                    <br> 
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" name="Email" required>
+                </div>
+                    <br>
+                    <br>
+                <div>
+                    <label>Mensagem</label>
+                    <br>
+                    <textarea cols="50" rows="4" name="Mensagem" required></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </div>
                 </form>
-            </h2>
-        </section>
+            </section>
         </main>
+        <footer> 
+            <p>
+                &COPY;2024 Minha empresa. Todos os direitos reservados.
+            </p>
+            <address>Endereço: Av. Exemplo, 123 - Cidade
+                Exemplo - Brasil
+            <br> Telefone: (XX) XXXX-XXXX
+            <br>Email: exemplo@email.com
+            </address>
+        </footer>
         <script src="" async defer></script>
          
     </body>
