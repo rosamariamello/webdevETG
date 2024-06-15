@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Função Criança, Adolescente ou Adulto</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1 id="titulo">Resultado da função Criança, Adolescente ou Adulto</h1>
+    <input type="number" id="valor1" />
+    <button onclick="caa()">Não Clique</button>
+    <!--Utilize if/else if/else para verificar se a pessoa é uma criança (menor de 12 anos),
+adolescente (entre 12 e 18 anos) ou adulto (maior de 18 anos). Imprima o resultado no console e em HTML.  -->
+
+    <script type="text/javascript">
+      function caa() {
+        //criação de variáveis
+        let value1 = parseInt(document.getElementById("valor1").value);
+        let result = 0;
+       // console.log(value1);
+
+        //operação matemática
+        if (value1 < 12) {
+          result = "Esta é uma criança";
+        } else if (value1 >=12 && value1 <= 18) {
+          result = "Este é um adolescente";
+        } else {
+            result = "Este é um adulto"
+        }
+
+        //mostrar resultado trocando o título
+       // console.log(result);
+        document.getElementById("titulo").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
