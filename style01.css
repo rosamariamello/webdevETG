@@ -16,10 +16,12 @@ padding: 2%;
     padding: 10%
 }
 
-    .negrito {
+
+.negrito {
         font-weight: bold;
        }
        
-    .ul.square {
+
+ul.square {
          list-style-type: square; }
        
