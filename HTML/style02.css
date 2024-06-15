@@ -2,14 +2,14 @@
   margin: 0px;
   padding: 0;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
-
+/* position para o cabeçalho ser relativo ao body */
 body {
 position: relative;
 background-color: #cbcbcb;
 }
 
+/* cabeçalho fixo */
 .header {
   position: fixed;
   width: 100vw;
@@ -17,32 +17,38 @@ background-color: #cbcbcb;
   background-color: rgb(0, 166, 255);
   top: 0;
   display: flex;
-  
-  
 }
 
+/* estilo da lista de nav */
 #lista01 {
+  list-style-type: none;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
 
+/* arruma distância dos links da nav */
+.link-button {
+  min-width: 100px;
 }
 
 #conteudo {
   margin-top:70px;
 }
 
+/* usei displayflex p centralizar conteúdo e inverti a ordem para que os filhos
+fossem alinhados sentido coluna */
 section {
   padding:70px 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-/* não comente isso por gentiza */
+/* não comente isso por gentiza 8D */
 .formulario {
-    
     margin: 0 auto;
     width: 400px;
     padding: 1em;
@@ -85,12 +91,15 @@ section {
 opacity: 0.8;
 transition-delay: 500ms;
 }
+
 .submit-button{
   margin-top: 20px;
 }
 
 .footer {
-  align:center
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* estilo card para uso geral*/ 
@@ -102,6 +111,7 @@ transition-delay: 500ms;
   padding: 20px;
 }
 
+/* declarar uma condição de estilo se a cond for satisfeita */
 @media screen and (max-width: 600px) {
   /*.header {
     grid-template-columns: 1fr;
