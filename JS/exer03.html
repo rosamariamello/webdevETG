@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Exercício JS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1 id="titulo">Esse é um título qualquer da página exercícios de JS</h1>
+        <button onclick="changeContent()">Não Clique</button>
+        <!--Crie uma função chamada soma que recebe dois números como parâmetros e retorna a soma deles.
+        Teste a função no console e em HTML. Crie uma função chamada multiplicaPorDez que recebe um
+        número como parâmetro e retorna esse número multiplicado por 10. O desafio é fazer isso em apenas uma linha de código. -->
+        
+        <script type="text/javascript"> 
+       console.log("subiu")
+       function changeContent () {
+            let titleElement = document.getElementById ("titulo")
+            titleElement.innerHTML = "Olá mundo!"
+        }
+
+        </script>
+    </body>
+</html>
