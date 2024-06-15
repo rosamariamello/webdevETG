@@ -12,63 +12,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/style02.css">
     </head>
-    <body>
-        <header>
-            <h1>Estudando formulários em HTML</h1>
-            <div class="navegacao">
+    <body style="position: relative;">
+        <header class="header">
+            <div class="header-title">
+                <h1>Estudando formulários em HTML</h1>
+            </div>
+            <div id="navegacao">
             <nav>
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                <ul id="lista01">
+                    <li><a href="#content">Sobre</a></li>
+                    <li><a href="#sec01">Serviços</a></li>
+                    <li><a href="#sec02">Contato</a></li>
                 </ul>
             </nav>
              </div>
         </header>
     <main>
             <section id="conteudo">
-                <div>
+                <div id="content">
                  <article>
                  <h2 class="titulo"> Sobre </h2 class="titulo">
                     <p>
                     Esta é uma página de exemplo, criada para demonstrar o uso da tag form do HTML
                     </p>
                 </article>
-                <img src="https://www.ispsaude.com.br/ponta-diamantada-3099-fg-poul-sorensen-p-ME01650A" alt="imagem não encontrada"/> 
+                <img width="600" src="https://s2-oglobo.glbimg.com/nkX5BybWudSZ7Pv9GUbLQAor8iY=/0x0:1042x551/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/W/Y/Q3lSWuSOKdYskymxBViA/t-rex.png" alt="fóssil de um T-rex"/> 
             </div>
             </section>
         <section id="sec01">
             <h2 class="titulo"> Serviços</h2 class="titulo">
                 <ul>
-                <li>Sobre</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li>Hospedagem de sites</li>
+                <li>Web Design</li>
+                <li>Desenvolvimento de aplicações</li>
                 </ul>
          </section>
         <section id="sec02">
             <h2 class="titulo">Entre em contato conosco </h2 class="titulo">
-                <form action="contato" method="post">
-                    <div>
+                <form id="formulario" action="contato" method="post">
+                    <fieldset class="card" style="width: 600px;">
+                    <div class="form-field">
                     <label>Nome</label>
-                    <br>
+                  
                     <input type="text" name="Nome" required> 
                 </div>
-                    <br>
-                    <br> 
-                <div>
+                  
+                   
+                <div class="form-field">
                     <label>Email</label>
-                    <br>
+                  
                     <input type="email" name="Email" required>
                 </div>
-                    <br>
-                    <br>
-                <div>
+                  
+                  
+                <div class="form-field">
                     <label>Mensagem</label>
-                    <br>
+                  
                     <textarea cols="50" rows="4" name="Mensagem" required></textarea>
-                    <br>
-                    <button type="submit">Enviar</button>
-                </div>
+                    
+                    </div>
+                <button type="submit" class="button submit-button">Enviar</button>
+                   </fieldset>
                 </form>
             </section>
         </main>
@@ -78,8 +82,8 @@
             </p>
             <address>Endereço: Av. Exemplo, 123 - Cidade
                 Exemplo - Brasil
-            <br> Telefone: (XX) XXXX-XXXX
-            <br>Email: exemplo@email.com
+           Telefone: (XX) XXXX-XXXX
+          Email: exemplo@email.com
             </address>
         </footer>
         <script src="" async defer></script>
