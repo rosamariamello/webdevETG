@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Função dias da semana</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1 id="titulo">Resultado da função dias da semana</h1>
+        <input type="number" id="valor1" />
+        <button onclick="dia7()">Não Clique</button>
+        <!-- Crie uma função chamada diaDaSemana que recebe um       número como parâmetro e retorna
+        o dia da semana correspondente         (1 para segunda-feira, 2 para         terça-feira, etc.) utilizando switch
+        case. Teste a função no console e         em HTML.  -->
+    
+        <script type="text/javascript">
+          function dia7() {
+            //criação de variáveis
+            let value1 = parseInt(document.getElementById("valor1").value);
+            let result = 0;
+           // console.log(value1);
+    
+            //operação matemática
+            switch (value1) {
+                case 1: 
+                    console.log("Hoje é segunda-feira") 
+                    result = "Hoje é segunda-feira"
+                    break;
+                case 2:
+                    console.log("Hoje é terça-feira") 
+                    result = "Hoje é terça-feira"
+                    break;
+                case 3:
+                    console.log("Hoje é quarta-feira") 
+                    result = "Hoje é quarta-feira"
+                    break;
+                case 4:
+                    console.log("Hoje é quinta-feira") 
+                    result = "Hoje é quinta-feira"
+                    break;
+                case 5:
+                    console.log("Hoje é sexta-feira") 
+                    result = "Hoje é sexta-feira"
+                    break;
+                case 6:
+                    console.log("Hoje é sabado") 
+                    result = "Hoje é sabado-feira"
+                    break;
+                case 7:
+                    console.log("Hoje é domingo") 
+                    result = "Hoje é domingo-feira"
+                    break;
+            }
+
+            //mostrar resultado trocando o título
+           // console.log(result);
+            document.getElementById("titulo").innerHTML = result;
+          }
+        </script>
+      </body>
+    </html>
