@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Desconto</title>
+    <script>
+        
+
+        // Função para obter os valores do formulário e mostrar o resultado
+        function calcular() {
+            let precoOriginal = parseInt(document.getElementById("precoOriginal").value);
+            let porcentagemDesconto = parseInt(document.getElementById("porcentagemDesconto").value);
+            let desconto = (precoOriginal * porcentagemDesconto) / 100;
+            let precoComDesconto = precoOriginal - desconto;
+
+            document.getElementById("resultado").innerHTML = "Preço com desconto: R$" + precoComDesconto.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <!-- interface do form  -->
+    <h1>Calculadora de Desconto</h1>
+    
+    <input type="number" id="precoOriginal">
+    <input type="number" id="porcentagemDesconto">
+    <button onclick="calcular()">Calcular Desconto</button>
+    <p id="resultado"></p>
+</body>
+</html>

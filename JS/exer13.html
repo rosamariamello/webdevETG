@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inversor de String</title>
+    <script>
+    
+        function inverteString(str) {
+            let invertida = '';
+            for (let i = str.length - 1; i >= 0; i--) {
+                invertida += str[i];
+            }
+            return invertida;
+        }
+
+        function inverter() {
+            var stringOriginal = document.getElementById("stringOriginal").value;
+            var stringInvertida = inverteString(stringOriginal);
+
+            document.getElementById("resultado").innerHTML = "Resultado: " + stringInvertida;
+        }
+    </script>
+</head>
+<body>
+    <h1>Inversor de String</h1>
+    <label for="stringOriginal">Escreva algo:</label>
+    <input type="text" id="stringOriginal"><br><br>
+    <button onclick="inverter()">Inverter tudo</button>
+    <p id="resultado"></p>
+</body>
+</html>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

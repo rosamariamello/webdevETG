@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Item à Lista</title>
+</head>
+<body>
+    <h1>Lista de Tarefas para realizar antes de dormir</h1>
+    <ul id="minhaLista">
+        <li>Regar o núcleo da terra</li>
+        <li>Abraçar uma árvore</li>
+        <li>Deixar um like nas nuvens</li>
+    </ul>
+    <input type="text" id="novoItem" placeholder="Nova Tarefa">
+    <button onclick="adicionarItem()">Adicionar nova tarefa</button>
+
+    <script>
+        function adicionarItem() {
+            // Obtém o valor do novo item
+            var novoItemTexto = document.getElementById('novoItem').value;
+
+            // Cria um novo elemento <li>
+            var novoItem = document.createElement('li');
+            // Define o texto do novo item
+            novoItem.textContent = novoItemTexto;
+
+            // Adiciona o novo item à lista
+            document.getElementById('minhaLista').appendChild(novoItem);
+
+            // Limpa o campo de entrada de texto
+            document.getElementById('novoItem').value = '';
+        }
+    </script>
+</body>
+</html>

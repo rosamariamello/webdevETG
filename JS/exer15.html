@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Número Primo</title>
+</head>
+<body>
+    <h1>Será que é Primo?</h1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="testaPrimo()">Não Clique</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificaPrimo(numero) {
+            if (numero <= 1) return false;
+            for (let i = 2; i < numero; i++) {
+                if (numero % i === 0) return false; //isso aqui é sacanagem, po
+            }
+            return true;
+        }
+
+        function testaPrimo() {
+            let numero = parseInt(document.getElementById('numero').value);
+            let resultado = verificaPrimo(numero);
+            document.getElementById('resultado').textContent = resultado ? numero + " é primo" : numero + " não é primo";
+        }
+                //amem pela existencia do stackoverflow
+        
+    </script>
+</body>
+</html>
